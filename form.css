@@ -68,12 +68,15 @@ label{
     padding: 12px 12px 12px 0;
     display:inline-block;
 }
+.checkbox{ cursor:pointer}
+.radio{cursor: pointer;}
 .input{
     width:70%;
     padding:12px;
     border:1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
+    cursor: pointer;
 }
 .profile-radio-content{
     display:flex;
@@ -100,4 +103,29 @@ select{
     letter-spacing: 1px;
     color:#42515f;
     background: transparent;
+    cursor: pointer;
+}
+.buttonParent{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.button{
+    margin:5px;
+    padding: 7px 7px;
+    font-size: 20px;
+    font-family: Robeto;
+    letter-spacing: 1px;
+    color:#42515f;
+    font-weight: 400;
+    min-width: 140px;
+    cursor: pointer;
+}
+.submitButton{
+    background-color: whitesmoke;
+    margin-right: 30px;
+}
+.cancelButton{
+    margin-left: 130px;
 }
