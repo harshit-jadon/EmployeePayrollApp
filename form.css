@@ -74,3 +74,19 @@ input{
     border-radius: 4px;
     resize: vertical;
 }
+.profile-radio-content{
+    display:flex;
+    flex-direction:row;
+    border: 0px solid black;
+}
+.profile-radio-content > label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 0px solid black;
+}
+.profile{
+    width:40px;
+    border-radius: 50%;
+    margin-left:12px;
+}
