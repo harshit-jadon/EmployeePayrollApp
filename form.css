@@ -1,0 +1,28 @@
+.header-content{
+    margin:10px;
+    padding: 10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border:0px solid grey;
+}
+.logo-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border:0px solid grey;
+    width: 80%;
+}
+.emp-text{
+    text-align: left;
+    font: normal normal bold 22px/25px Montserrat;
+    color: #82A70C;
+    font-family:sans-serif;
+    text-transform: capitalize;
+}
+.emp-payroll{ color:#42515F; }
+
+*{box-sizing: border-box;}
+
