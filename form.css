@@ -50,7 +50,7 @@
     opacity: 1;
     padding-bottom: 20px;
 }
-row.content{
+.row.content{
     display: flex;
     flex-direction: row;
     margin-bottom: 10px;
@@ -64,10 +64,10 @@ row.content{
     font-family:Roboto;
 }
 label{
-    padding: 12px;
+    padding: 12px 12px 12px 0;
     display:inline-block;
 }
-input{
+.input{
     width:70%;
     padding:12px;
     border:1px solid #ccc;
