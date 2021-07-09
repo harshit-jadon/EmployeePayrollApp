@@ -1,39 +1,35 @@
 class EmployeePayrollData{
-    id;
-    name;
-    profileImage;
-    gender;
-    department;
-    salry;
-    startDate;
 
     get id(){ return this._id; }
     set id(id){ this._id = id; }
 
-    get name(){ return this.name; }
+    get name(){ return this._name; }
     set name(name){ 
-        let nameRegex = RegExp("^[A-Z]{1}[a-zA-z]{3,}$");
+        let nameRegex = RegExp('^[A-Z]{1}[a-zA-Z\\s]{2,}$')
         if(nameRegex.test(name)){
             this._name = name; }
         else{ throw "Incorrect Name";}
     }
 
-    get profileImage(){ return this.profileImage; }
+    get profileImage(){ return this._profileImage; }
     set profileImage(profileImage){ this._profileImage = profileImage; }
 
-    get gender(){ return this.gender; }
-    set gender(gender){ this.gender = gender; }
+    get gender(){ return this._gender; }
+    set gender(gender){ this._gender = gender; }
 
-    get department(){ return this.department; }
+    get department(){ return this._department; }
     set department(department){ this._department = department; }
 
-    get salary(){ return this.salary; }
+    get salary(){ return this._salary; }
     set salary(salary){ this._salary = salary; }
 
-    get startDate(){ return this.startDate; }
+    get startDate(){ return this._startDate; }
     set startDate(startDate){
         let now =new Date();
         if(startDate > now) throw "start date is a Future Date!";
+        var diff = Math.abs(now.getTime() - startDate.getTime());
+        if (diff / (1000 * 60 * 60 * 24) > 30)
+        throw 'Start Date is beyond 30 Days!';
         this._startDate = startDate; 
     }
 
@@ -41,7 +37,7 @@ class EmployeePayrollData{
     set notes(notes){ this._notes = notes; }
     
     toString(){
-        const options = { year: "numeric",month= "long", day: "numeric"};
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
         const empDate = !this.startDate ? "undefined" :
                          this.startDate.toLocalDateString("en-US",options);
         

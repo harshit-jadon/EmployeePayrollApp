@@ -127,3 +127,9 @@ select{
     margin-right: 30px;
     margin-left: 450px;
 }
+error-output{
+    margin-left: 10px;
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+}
