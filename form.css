@@ -125,7 +125,5 @@ select{
 .submitButton{
     background-color: whitesmoke;
     margin-right: 30px;
-}
-.cancelButton{
-    margin-left: 130px;
+    margin-left: 450px;
 }

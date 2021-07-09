@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
         <link rel="icon" href="image\formlogo.png">
-       <title> Employee Payroll Form</title> 
-       <link rel="stylesheet" href="form.css">
+        <title> Employee Payroll Form</title> 
+        <link rel="stylesheet" href="form.css">
     </head>
     <body>
         <header class="header-content"> 
@@ -73,7 +74,7 @@
                 <div class="row-content">
                     <label class="label text" for="salary">Salary</label>
                     <input class="input" type="range" name="salary" id="salary" min="300000" max="500000" step="100" value="">
-                    <output class="salary-output text" for="salary"> 400000</output>
+                    <output class="salary-output text" for="salary"> </output>
                 </div>
                 <div class="row-content">
                     <label class="label text" for="startdate">Start date</label>
@@ -140,13 +141,15 @@
                     <textarea id="notes" class='input' name="Notes" placeholder="write note here(it is optional)" style="height:100px";></textarea>
                 </div>
                 <div class="buttonparent">
-                    <a href="form.html" class="button cancelButton resetButton">Cancel</a>
+                    <!-- <a href="form.html" class="button cancelButton resetButton">Cancel</a> -->
                     <div class="submit-reset">
+                        <button type="cancel" class="button cancelButton resetButton" id="cancelButton" onclick="document.location='form.html'">Cancel</button>
                         <button type="submit" class="button submitButton" id="submitButton">Submit</button>
                         <button type="reset" class="button resetButton">Reset</button>
                     </div>
                 </div>
-                </form>
+                </form>         
         </div>
     </body>
+    <script src="form.js"> </script>
 </html>
