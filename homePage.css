@@ -1,6 +1,6 @@
 .header-content{
     display:flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 15px;
@@ -21,3 +21,46 @@
 }
 .emp-payroll{color:#42515F;}
 *{box-sizing:border-box;}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    background-color: #F7F7F7;
+    padding: 30px 0px 10px;
+    box-sizing: border-box;
+}
+.header-content1{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width:78%;
+    margin:0 auto;
+    padding-bottom:25px;
+}
+.emp-details-text{
+    color: #42515f;
+    font: normal normal bold 22px/20px Montserrat;
+    opacity: 1;
+    letter-spacing: 0.5px;
+}
+.emp-count{
+    background-color: #82a70c;
+    color: white;
+    text-align: center;
+    border-radius: 42%;
+    display:inline-block;
+    font-size: 20px;
+    width:30px;
+}
+.add-button{
+    display: flex;
+    background-color: #82a70c;
+    font: normal normal bold 22px/20px Montserrat;
+    color:white;
+    opacity: 1;
+    border-radius: 5px;
+    padding:5px 18px 2px 5px;
+    cursor:pointer;
+    outline: none;
+}
