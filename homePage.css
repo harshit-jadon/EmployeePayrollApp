@@ -1,0 +1,23 @@
+.header-content{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: white;
+}
+.logo-content{
+    display:flex;
+    flex-flow: row wrap;
+    width:80%;
+    background-color: white;
+}
+.emp-text{
+    color: #82A70C;
+    font: normal normal bold 22px/20px Montserrat;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    text-transform:uppercase;
+}
+.emp-payroll{color:#42515F;}
+*{box-sizing:border-box;}
