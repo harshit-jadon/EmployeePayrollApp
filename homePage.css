@@ -1,3 +1,7 @@
+html body{
+    margin:0;
+    height: 100%;
+}
 .header-content{
     display:flex;
     flex-direction: row;
@@ -9,6 +13,7 @@
 .logo-content{
     display:flex;
     flex-flow: row wrap;
+    align-items: center;
     width:80%;
     background-color: white;
 }
@@ -25,6 +30,7 @@
 .main-content{
     display: flex;
     flex-direction: column;
+    /* min-height: calc(100vh - 80px); */
     background-color: #F7F7F7;
     padding: 30px 0px 10px;
     box-sizing: border-box;
@@ -34,13 +40,13 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    width:78%;
-    margin:0 auto;
+    width: 78%;
+    margin:auto;
     padding-bottom:25px;
 }
 .emp-details-text{
     color: #42515f;
-    font: normal normal bold 22px/20px Montserrat;
+    font: normal normal bold 22px/20px Roboto;
     opacity: 1;
     letter-spacing: 0.5px;
 }
@@ -50,17 +56,71 @@
     text-align: center;
     border-radius: 42%;
     display:inline-block;
-    font-size: 20px;
-    width:30px;
+    font-size: 16px;
+    width:26px;
 }
 .add-button{
     display: flex;
     background-color: #82a70c;
-    font: normal normal bold 22px/20px Montserrat;
+    font: normal normal normal 22px/29px Roboto;
     color:white;
     opacity: 1;
     border-radius: 5px;
-    padding:5px 18px 2px 5px;
+    padding:7px 28px 5px 15px;
     cursor:pointer;
-    outline: none;
+    letter-spacing: 0.5px;
+}
+.table-main{
+    width:80%;
+    margin: 0 auto;
+    overflow: auto;
+}
+.table{
+    width:100%;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    min-width: 80%;
+    margin:auto;
+}
+th{
+    background-color: #42515F;
+    color: white;
+    text-align: left;
+    padding:15px 8px;
+    font: normal normal normal 15px/15px Roboto;
+    text-transform: uppercase;
+}
+td{
+    text-align: left;
+    padding:5px 8px;
+    font: normal normal normal 15px/21px Roboto;
+    color: #3d3d3d;
+
+}
+tr:not(:first-child){
+    background: white 0% 0% no-repeat padding-box;
+    border: 1px solid #e3e3e3;
+    border-radius: 3px;
+}
+td:first-child{
+    display: flex;
+    align-items: center;
+}
+td img:first-child{
+    margin-right:10px;
+    margin-left: 10px;
+}
+td img{
+    cursor: pointer;
+}
+.dept-label{
+    background-color:#e9fea5;
+    border-radius:40%;
+    width:fit-content;
+    text-align: center;
+    font-size: 14px;
+    display:inline-block;
+    margin: 4px;
+    padding: 4px;
+    
 }
