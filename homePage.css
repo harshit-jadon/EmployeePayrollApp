@@ -80,7 +80,7 @@ html body{
     border-collapse: separate;
     border-spacing: 0 15px;
     min-width: 80%;
-    margin:auto;
+    margin-left:auto;
 }
 th{
     background-color: #42515F;
@@ -122,5 +122,5 @@ td img{
     display:inline-block;
     margin: 4px;
     padding: 4px;
-    
+
 }
