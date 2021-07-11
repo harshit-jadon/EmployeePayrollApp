@@ -5,10 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="image\formlogo.png">
         <title> Employee Payroll Form</title> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap">
         <link rel="stylesheet" href="form.css">
         <script src="EmployeePayrollData.js"> </script>
         <script src="form.js"></script>
+        <script src="utility.js"></script>
+        <script src="siteProperties.js"></script>
     </head>
     <body>
         <header class="header-content"> 
@@ -145,14 +148,14 @@
                     <label class="label text" for="notes">Notes</label>
                     <textarea id="notes" class='input' name="Notes" placeholder="write note here(it is optional)" style="height:100px";></textarea>
                 </div>
-                <div class="buttonparent">
+                <div class="button-content">
                      <div class="submit-reset">
                         <button type="cancel" class="button cancelButton resetButton" id="cancelButton" onclick="document.location='form.html'">Cancel</button>
                         <button type="submit" class="button submitButton" id="submitButton">Submit</button>
                         <button type="reset" class="button resetButton">Reset</button>
                     </div>
                 </div>
-                </form>    
+            </form>    
         </div>
     </body>
-    </html>
+</html>
