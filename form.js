@@ -51,7 +51,7 @@ let createEmployeePayroll = () => {
     try{
         employeePayrollData.name = getInputValueById("#name");
     }catch(e){ setTextValue(".text-error",e);
-                throw e}
+                throw e;}
     employeePayrollData.profileImage = getselectedValues("[name=profile]").pop();
     employeePayrollData.gender = getselectedValues("[name=gender]").pop();
     employeePayrollData.department = getselectedValues("[name=department]");
@@ -66,7 +66,7 @@ const getselectedValues = (propertyValue) => {
     let allItems = document.querySelectorAll(propertyValue);
     let selItems = [];
     allItems.forEach(item => {
-        if(item.checked) selItems.push(item.value);
+        if(item.checked){ selItems.push(item.value);}
     });
     return selItems;
 }
@@ -82,11 +82,12 @@ const resetForm = () => {
     setValue('#name','');
     unsetSelectedValues('[name=profile]');
     unsetSelectedValues('[name=gender]');
+    unsetSelectedValues('[name=department]');
     setValue('#salary','');
-    setValue('#notes','');
     setValue('#day','1');
     setValue('#month','January');
     setValue('#year','2020');
+    setValue('#notes','');
 }
 const unsetSelectedValues = (propertyValue) => {
     let allItems = document.querySelectorAll(propertyValue);
@@ -96,7 +97,7 @@ const unsetSelectedValues = (propertyValue) => {
 }
 const setTextValue = (id,value) => {
     const element = document.querySelector(id);
-    element.value = value;
+    element.textContent = value;
 }
 const setValue =(id,value) => {
     const element = document.querySelector(id);
